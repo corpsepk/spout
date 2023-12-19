@@ -83,6 +83,7 @@ class XMLReader extends \XMLReader
      * @throws \Box\Spout\Reader\Exception\XMLProcessingException If an error/warning occurred
      * @return bool TRUE on success or FALSE on failure
      */
+    #[ReturnTypeWillChange]
     public function read()
     {
         $this->useXMLInternalErrors();
